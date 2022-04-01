@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.411)),
+    url("./1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins" , sans-serif;
+    margin: 20px;
+
+    min-height: 100vh;
+    color: white;
+}
+
+.pw-container {
+    background-color: darkcyan;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.pw-header {
+    padding: 1rem;
+}
+
+.pw {
+    background-color: rgba(0, 255, 255, 0.308);
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.pw button {
+    background-color: rgb(31, 110, 110);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, -55%);
+    transition: opacity 0.2s ease, trasform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, -55%);
+}
+.pw-header{
+    padding: 1rem;
+}
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+input.largerCheckbox {
+    transform : scale(1.8);
+}
+
+.generate{
+    background-color: rgb(31, 110, 110);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+.footer {
+    position: absolute;
+    top: 1;
+    bottom: 0;
+    font-size: 2rem;
+    background-color: none;
+    text-align: 0;
+    color: white;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.2 ease;
+    z-index: 1;
+}
+
+.footer-active {
+    opacity: 1;
+    transform: translate(0, 0%);
+    z-index: 1;
+}
